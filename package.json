@@ -1,0 +1,24 @@
+{
+  "name": "fiix-mock-api",
+  "version": "0.0.0",
+  "lockfileVersion": 3,
+  "requires": true,
+  "contributors": [
+    {
+      "name": "Sam Kulesa",
+      "email": "sam@inskill.ai"
+    }
+  ],
+  "description": "Mock API Server simulating Fiix API",
+  "main": "server.js",
+  "packages": {},
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": {
+    "name": "Sam Kulesa",
+    "email": "sam@inskill.ai"
+  }
+}
+
+
