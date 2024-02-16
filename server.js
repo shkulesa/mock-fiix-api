@@ -2,7 +2,7 @@
 let express = require('express');
 
 let app = express();
-let port = 8000;
+let port = process.env.PORT || 8000;
 
 app.use(express.text({ type: 'text/plain' }));
 // app.use(express.json());
@@ -18,7 +18,10 @@ app.post('/api', (req, res) => {
   // if (req.charset !== 'utf-8') {
   //   return res.status(400).send('Request must be in UTF-8 encoding');
   // }
+  console.log('Incoming payload:');
+  console.log(req.body);
   let parsed = JSON.parse(req.body);
+  console.log('Parsed: ');
   console.log(parsed);
   let response = generateResponseBody(parsed);
 
